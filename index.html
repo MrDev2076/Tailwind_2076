@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocify</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Include Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  
+    <!-- Include Font Awesome for the quote-right icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="container-fluid min-h-screen bg-[url('images/image.png')] bg-center bg-cover px-5 md:px-28 py-1 relative scroll-smooth">
+    <nav class="fixed top-1 left-0 right-0 z-50 flex items-center justify-between bg-[url('images/image.png')] bg-center bg-cover">
+        <img src="images/logo.png" alt="" class="w-24 md:w-40 mx-4 md:mx-8 cursor-pointer">
+
+        <!-- Responsive Navigation Button -->
+        <div class="md:hidden">
+            <button id="openButton" class="bg-green-600 font-thin leading-8 text-white px-4 py-2 rounded">
+                Menu
+            </button>
+        </div>
+
+        <!-- Navigation Links (Hidden on Small Screens) -->
+        <ul class="hidden md:flex-1 md:flex md:items-center text-center">
+            <li class="list-none inline-block px-3 md:px-5">
+                <a href="#" class="no-underline text-white px-2 hover:text-yellow-500">Home</a>
+            </li>
+            <li class="list-none inline-block px-3 md:px-5">
+                <a href="#" class="no-underline text-white px-2 hover:text-yellow-500">About</a>
+            </li>
+            <li class="list-none inline-block px-3 md:px-5">
+                <a href="#" class="no-underline text-white px-2 hover:text-yellow-500">Orders</a>
+            </li>
+            <li class="list-none inline-block px-3 md:px-5">
+                <a href="#" class="no-underline text-white px-2 hover:text-yellow-500">Review</a>
+            </li>
+        </ul>
+    
+          
+
+    </nav>
+    <main>
+
+
+    <div class="text-white mt-48 max-w-xl">
+        <h1 class="text-6xl font-semibold leading-normal">Groceries<br>delivery in <span class="font-extralight">15 mins</span></h1>
+        <p>Grocify offer a wide range of products, including fresh products, meats, <br>
+            dairy, baked goods and non-perishable items.
+        </p>
+
+        <div class="mt-10">
+            <a href="#" class="bg-yellow-300 text-black rounded-3xl py-3 px-8 font-medium inline-block mr-16 hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border border border-transparent">Order Now</a>
+            <a href="#">Download Now</a>
+            <span class="text-lg inline-block rotate-90">&#x27A4;</span>
+        </div>
+
+        <img src="images/grocery-image.png" alt="" class="w-100 xl:w-1/3 xl:absolute bottom-0 right-20">
+    </div>
+    </main>
+  </div>
+
+
+
+
+<div class="relative isolate overflow-hidden bg-yellow-900 py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <h3 class="text-base font-semibold leading-5 text-red-400">Empty Cart! Get More</h3>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Order Now</p>
+        <p class="mt-6 text-lg leading-8 text-white">Make Your Cart  Full With Us</p>
+      </div>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-white">
+             
+              Vegies & Meat
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-white">
+              At our store, we offer a diverse selection of fresh and high-quality produce, including a vibrant array of vegetables. From crisp greens to colorful bell peppers and robust root vegetables, our veggie section is a feast for the eyes and the palate. Additionally, our premium meat collection boasts top-grade cuts, ensuring that every meal you prepare is a delicious and satisfying experience.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-white">
+              
+              Groceries
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-white">
+              Explore a world of convenience at our shopping store, where groceries meet quality and variety. From fresh produce to pantry essentials, our shelves are stocked to cater to your every need. Experience hassle-free shopping with us and elevate your culinary journey with the finest selection of groceries available in-store.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-white">
+             
+              Baked Foods
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-white">
+              Indulge your taste buds with the irresistible allure of freshly baked goods at our shopping store. From warm and crusty artisanal bread to decadent pastries and mouthwatering cookies, our bakery section is a haven for baking enthusiasts and those seeking a delightful treat. Elevate your shopping experience with the enticing aroma and exquisite flavors of our carefully crafted baked delights.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-white">
+             
+              Drinks and Bevarages
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-white">
+              Quench your thirst with our diverse selection of refreshing drinks and beverages at our shopping store. From energizing coffees to soothing herbal teas, we offer a delightful array of choices to suit every taste. Elevate your shopping experience by exploring our beverage aisle and discover the perfect companion for your next shopping spree.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+        <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      </div>
+  </div>
+
+
+<div class="relative isolate overflow-hidden bg-black-900 py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3 flex">
+        <div class="mx-auto flex max-w-xs flex-col gap-y-4 p-2 ">
+          <dt class="text-base leading-7 text-white">Turn over every year</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight text-indigo-700 sm:text-5xl">15 million</dd>
+        </div>
+        <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+          <dt class="text-base leading-7 text-white ">Store Services</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight text-indigo-700 sm:text-5xl">580 +</dd>
+        </div>
+        <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+          <dt class="text-base leading-7 text-white">Customers Every year</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight text-indigo-600 sm:text-5xl">30,000</dd>
+        </div>
+      </dl>
+    </div>
+    <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+        <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      </div>
+  </div>
+
+
+<div class="relative isolate overflow-hidden bg-green-900 py-24 sm:py-32">
+    <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Meet our leadership</h2>
+        <p class="mt-6 text-lg leading-8 text-white">"Explore the dynamic expertise and visionary leadership driving our shopping store, where innovation meets experience to create a seamless and enjoyable retail journey for our customers.".</p>
+      </div>
+      <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+            <div>
+              <h3 class="text-base font-semibold leading-7 tracking-tight text-white">Leslie Alexander</h3>
+              <p class="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+            <div class="flex items-center gap-x-6">
+              <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="">
+              <div>
+                <h3 class="text-base font-semibold leading-7 tracking-tight text-white">Emma Dorsey</h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">Senior Developer</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1507101105822-7472b28e22ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="">
+              <div>
+                <h3 class="text-base font-semibold leading-7 tracking-tight text-white">Jenny Wilson</h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">Studio Artist</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="">
+              <div>
+                <h3 class="text-base font-semibold leading-7 tracking-tight text-white">Alicia Bell</h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">Junior Copywriter</p>
+              </div>
+            </div>
+          </li>
+    
+  
+       
+      </ul>
+    </div>
+    <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+        <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      </div>
+  </div>
+
+     <section id="review" class="bg-blackColor py-20">
+       <div class="customer__review container">
+        <div class="max-w-md mx-auto text-center">
+          <h2 class="section__title">CUSTOMER REVIEW</h2>
+          <div class="separator  mx-auto"></div>
+          <p class="paragraph pb-2">some of the reviews by our regular customers</p>
+        </div>
+        <div>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <li class="swiper-slide">
+            <div class="flex flex-col gap-5 bg-purple-800 dark:bg-darkColor rounded-lg p-6">
+              <p class="paragraph">I ordered Freshmeat on 7/12/2023 around 9.47pm opting to receive it by 1:30 max, 
+                they made me wait for more than 2hrs and
+                 when i tried calling Agency for the number of times all they did is
+                  'IAM SORRY MAAM FOR THE INCONVENIENT CAUSE' and 
+                  atlast they cancelled my order without my knowledge. And
+                   today is 12/12/2023 haven't received any refund yet all they do is blame the bank.
+                    Even the Number they gave me to contact bank is invalid.Grocify is the worst App i came across , 
+                    No proper customer care service, Delays in every order, Less man power,
+                     Refund has always been a majo problem . I suggest you'll to stop using this app.</p>
+              <div class="flex items-center">
+                <img src="images/10.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                <div class="ml-2">
+                  <p class="font-oswald uppercase">wangsulily42</p>
+                  <p class="paragraph">user2390</p>
+                </div>
+                <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+              </div>
+            </div>
+          </li>
+        </div>
+      <div class="swiper-slide">
+        <li class="swiper-slide">
+            <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+              <p class="paragraph">BB Now Vagodia..Vadodara Women Biker 9.30pm 10.00pm tak order Delivery karte...
+
+                To Kiya Women Biker 10.00pm tak over time karti he to please...Please.. please ?? Women Biker ko kaho ki 7.30pm ke baad Ghar Chale jaaye please ?? Women Biker Na Ruke.....
+                
+                Muje Pata He Women biker ka Naam Aur Unki I d ...please highlights.....Big Basket Team please</p>
+              <div class="flex items-center">
+                <img src="images/09.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                <div class="ml-2">
+                  <p class="font-oswald uppercase">Ivana Dasie</p>
+                  <p class="paragraph">user2456</p>
+                </div>
+                <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+              </div>
+            </div>
+          </li>
+        </div>
+     
+      <div class="swiper-slide">
+        <li class="swiper-slide">
+            <div class="flex flex-col gap-5 bg-purple-800 dark:bg-darkColor rounded-lg p-6">
+              <p class="paragraph">I have ordered onion and Grocify delivered potatoes
+
+                Ridiculous, frustrating, pathetic service
+                
+                As always pathetic experience
+                
+                pathetic customer service
+                
+                Should be -1 rating
+                
+              </p>
+              <div class="flex items-center">
+                <img src="/images/03.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                <div class="ml-2">
+                  <p class="font-oswald uppercase">Nelson</p>
+                  <p class="paragraph">user4678</p>
+                </div>
+                <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+              </div>
+            </div>
+          </li>
+        </div>
+      <div class="swiper-slide">
+        <li class="swiper-slide">
+            <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+              <p class="paragraph">I ordered Freshmeat on 7/12/2023 around 9.47pm opting to receive it by 1:30 max, they made me wait for more than 2hrs and when i tried calling Agency for the number of times all they did is 'IAM SORRY MAAM FOR THE INCONVENIENT CAUSE' and atlast they cancelled my order without my knowledge. And today is 12/12/2023 haven't received any refund yet all they do is blame the bank. Even the Number they gave me to contact bank is invalid.Bigbasket is the worst App i came across , No proper customer care service, Delays in every order, Less man power, Refund has always been a majo problem . I suggest you'll to stop using this app.</p>
+              <div class="flex items-center">
+                <img src="images/04.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                <div class="ml-2">
+                  <p class="font-oswald uppercase">Mark rouls</p>
+                  <p class="paragraph">user4983</p>
+                </div>
+                <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+              </div>
+            </div>
+          </li>
+        </div>
+      <div class="swiper-slide">
+        <li class="swiper-slide">
+            <div class="flex flex-col gap-5 bg-purple-800 dark:bg-darkColor rounded-lg p-6">
+              <p class="paragraph">BB Now Vagodia..Vadodara Women Biker 9.30pm 10.00pm tak order Delivery karte...
+
+                To Kiya Women Biker 10.00pm tak over time karti he to please...Please.. please ?? Women Biker ko kaho ki 7.30pm ke baad Ghar Chale jaaye please ?? Women Biker Na Ruke.....
+                
+                Muje Pata He Women biker ka Naam Aur Unki I d ...please highlights.....Big Basket Team please </p>
+                <div class="flex items-center">
+                <img src="/images/02.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                <div class="ml-2">
+                  <p class="font-oswald uppercase">Feddy</p>
+                  <p class="paragraph">user3980f</p>
+                </div>
+                <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+              </div>
+            </div>
+          </li>
+        </div>
+      </div>
+    
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next text-transparent bg-transparent  "></div>
+    <div class="swiper-button-prev text-transparent bg-transparent"></div>
+  </div>
+</div>
+</div>
+    </section>
+    
+    <div class="relative container-fluid isolate overflow-hidden bg-gray-900  py-24 sm:py-32 lg:flex">
+      <!-- Blog Section -->
+      <div class="flex-1 mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl">
+              <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">From the blog</h2>
+              <div class="separator w-54"></div>
+              <p class="mt-2 text-lg leading-8 text-gray-400">Learn how to grow your business with our expert advice.
+                "Dive into our captivating blog section, where we curate insightful content that transcends the ordinary. Uncover the latest trends, expert advice, and behind-the-scenes stories that inspire and inform. Join our community of enthusiasts as we explore a world of ideas, tips, and stories, enriching your online experience. Stay tuned for a diverse range of topics that cater to your interests and curiosity."</p>
+          </div>
+          <div class="mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:max-w-none lg:grid-cols-3">
+              <article class="flex max-w-xl flex-col items-start justify-between">
+              </article>
+          </div>
+      </div>
+  
+      <div class="relative overflow-hidden mr-3  py-16 sm:py-24 lg:py-32 lg:flex-shrink-0">
+          <div class="mx-auto max-w-xl px-6 lg:px-8">
+              <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl text-center">Subscribe to Grocify.</h2>
+             
+              <p class="mt-4 text-lg leading-8 text-gray-300 text-center">Subscribe to get more updates from Grocify.</p>
+              <div class="mt-6 flex max-w-md mx-auto gap-x-4">
+                  <label for="email-address" class="sr-only">Email address</label>
+                  <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email">
+                  <button type="submit" class="flex-none rounded-md bg-blue-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Subscribe</button>
+              </div>
+          </div>
+          <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+              <div class="aspect-w-12 aspect-h-7 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+          </div>
+      </div>
+  </div>
+  
+
+<!--Footer-->
+<div class="bg-blackColor bg-[url('images/image.png')]  relative isolate overflow-hidden bg-gray-900  ">   
+    <footer>
+    <section class="footer text-white my-8 mx-9">
+      <div class="container-fluid">
+        <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
+          <li>
+            <div class="space-y-3">
+              <a href="" class="text-4xl font-oswald uppercase">
+                <span class="text-4xl font-semibold leading-normal"> <img src="images/logo.png" alt="" class="w-44 md:w-40 mx-4 md:mx-8 cursor-pointer">
+                </span>
+              </a>
+
+              <p class="text-xs">
+               Make your Cart Full with Us</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="flex flex-col gap-3">
+              <h3 class="text-lg uppercase font-oswald">SUPPORT</h3>
+              <a href="" class="text-xs hover:text-secondaryColor">FAQ's</a>
+              <a href="" class="text-xs hover:text-secondaryColor">Privacy Policy</a>
+              <a href="" class="text-xs hover:text-secondaryColor">Term & Condition</a>
+              <a href="" class="text-xs hover:text-secondaryColor">Contact</a>
+            </div>
+          </li>
+
+          <li class="space-y-28">
+            <div class="space-y-2">
+              <h3 class="text-lg uppercase font-oswald">phone</h3>
+
+              <p class="flex items-center gap-2 text-xs">
+                <i class="fa-solid fa-phone text-lg text-secondaryColor"></i>
+                +91 800 000 0000
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <h3 class="text-lg uppercase font-oswald">email</h3>
+
+              <p class="flex items-center gap-2 text-xs">
+                <i class="fa-solid fa-envelope text-lg text-secondaryColor"></i>
+                Groceries@gmail.com
+              </p>
+            </div>
+          </li>
+
+          <li class="space-y-8">
+            <ul class="col-4">
+            <div class="space-y-2">
+              <h3 class="text-lg uppercase font-oswald">address</h3>
+
+              <p class="flex items-center gap-2 text-xs">
+               <li>Groceries </li>
+                <li>2/3-C8-Dhakin,</li>
+                <li>Twins Street,</li>
+                <li>Vijayawada - 522201 </li>
+              </p>
+            </div>
+            </ul>
+            </li>
+            
+
+          <div class="space-y-2">
+              <h3 class="text-lg uppercase font-oswald">follow us</h3>
+              <div class="space-x-3">
+                <i class="fa-brands fa-facebook-f text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                <i class="fa-brands fa-twitter text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                <i class="fa-brands fa-square-instagram text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="flex flex-col items-center border-t border-primaryColorLight dark:border-darkColorLight py-5 md:flex-row md:justify-between">
+          <p class="paragraph">Grocify</p>
+          <p class="paragraph">Copyright © 2023. All rights reserved.</p>
+        </div>
+        <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+            <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+          </div>
+      </div>
+    </section>
+  </footer>
+
+  <a href="#" class="fixed right-4 bottom-4 bg-yellow-300 shadow-sm inline-block px-4 py-2 rounded-full
+  text-lg text-black hover:-translate-y-1 ease-in duration-200">&#8593;</a>
+</div>
+
+
+
+  <!-- Include Swiper JS after your HTML content -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+
+////
+
+// JavaScript implementation without Alpine.js
+
+// Get references to the button and popup elements
+const openButton = document.getElementById('openButton');
+const popup = document.getElementById('popup');
+const closeButton = document.getElementById('closeButton');
+
+// Function to open the popup
+function openPopup() {
+  popup.style.display = 'flex';
+}
+
+// Function to close the popup
+function closePopup() {
+  popup.style.display = 'none';
+}
+
+// Attach click event listeners
+openButton.addEventListener('click', openPopup);
+closeButton.addEventListener('click', closePopup);
+
+/////
+
+
+  </script>
+</body>
+</html>
